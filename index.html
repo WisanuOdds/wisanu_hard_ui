@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisanu hard ui</title>
+    <title>Wisanu Hard Ui</title>
     <link rel="icon" href="wisanu.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css"> <!-- ไฟล์ CSS หลัก -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="scripts.js" defer></script> <!-- ไฟล์ JavaScript หลัก -->
 </head>
 <body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Content</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Likes</a></li>
+            <li><a href="#">Comments</a></li>
+            <li><a href="#">Share</a></li>
+        </ul>
+    </nav>
 
+    <!-- Hamburger Icon -->
+    <i class="fas fa-bars hamburger" id="hamburger"></i>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <h1>Main Content</h1>
+        <p>This is the main content area. Click the hamburger icon to toggle the sidebar.</p>
+    </div>
 </body>
 </html>
