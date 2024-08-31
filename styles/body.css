@@ -109,12 +109,13 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1000px;
-    width: 100%;
+    min-width: fit-content;
+    width: 50%;
     padding: 10px 20px 20px 20px;
     transition: transform 0.3s ease; /* เพิ่ม transition สำหรับ margin-left */
     /* background-color: #ebebeb; */
 }
 
-.main-content.shift {
-    transform: translateX(100px); 
-}
+/* .main-content.shift {
+    transform: translateX(0px); 
+} */

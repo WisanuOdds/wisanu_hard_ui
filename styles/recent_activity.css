@@ -10,13 +10,12 @@
     /* background-color: #afafaf; */
 }
 
-.table{
-    margin-top: 10px;
-}
-
 #dataTable {
+    max-width: 754px;
     width: 100%;
     border-collapse: none;
+    margin-top: 10px;
+    /* background-color: aqua; */
 }
 
 #dataTable th,
