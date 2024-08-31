@@ -6,53 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wisanu Hard Ui</title>
     <link rel="icon" href="wisanu.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/body.css"> 
+    <link rel="stylesheet" href="styles/body.css">
     <link rel="stylesheet" href="styles/search.css">
-    <link rel="stylesheet" href="styles/dashboard.css"> 
+    <link rel="stylesheet" href="styles/dashboard.css">
     <link rel="stylesheet" href="styles/recent_activity.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script type="module" src="scripts.js" defer></script> 
+    <script type="module" src="scripts.js" defer></script>
 
 </head>
 
 <body>
     <!-- Sidebar -->
     <nav class="sidebar" id="sidebar">
-
         <div class="box-codinglab">
             <div class="cl">CL</div>
             <div class="codinglab">Codinglab</div>
         </div>
 
-        <ul style="margin-bottom: auto;">
+        <ul>
             <li><a href="#"><i class="fa-solid fa-house"></i><span class="text-navbar">Dashboard</span></a></li>
             <li><a href="#"><i class="fa-regular fa-copy"></i><span class="text-navbar">Content</span></a></li>
             <li><a href="#"><i class="fa-solid fa-chart-column"></i><span class="text-navbar">Analytics</span></a></li>
             <li><a href="#"><i class="fa-regular fa-thumbs-up"></i><span class="text-navbar">Likes</span></a></li>
             <li><a href="#"><i class="fa-regular fa-message"></i><span class="text-navbar">Comments</span></a></li>
-            <li><a href="#"><i class="fa-solid fa-share-nodes"></i><span class="text-navbar">Share</span></a></li> 
+            <li><a href="#"><i class="fa-solid fa-share-nodes"></i><span class="text-navbar">Share</span></a></li>
         </ul>
-      
+
         <ul class="bottom-items">
             <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i><span class="text-navbar">Logout</span></a></li>
             <li><a href="#"><i class="fa-solid fa-circle-half-stroke"></i><span class="text-navbar">Dark Mode</span></a></li>
         </ul>
-
     </nav>
-   
+
     <!-- Main Content -->
     <section class="main-content" id="main-content">
-
         <section class="content-hamburger-search">
             <i class="fas fa-bars hamburger" id="hamburger"></i>
             <input type="text" class="search" id="search" placeholder="Search here ...">
             <img src="wisanu.png" alt="wisanu" class="wisanu">
         </section>
-         
+
         <section class="dashboard">
             <div class="container-title">
                 <div class="icon-title">
-                <i class="fa-brands fa-squarespace fa-xl"></i>
+                    <i class="fa-brands fa-squarespace fa-xl"></i>
                 </div>
                 <h1>Dashboard</h1>
             </div>
@@ -80,11 +77,11 @@
         <section class="recent-activity">
             <div class="container-title">
                 <div class="icon-title">
-                <i class="fa-brands fa-squarespace fa-xl"></i>
+                    <i class="fa-brands fa-squarespace fa-xl"></i>
                 </div>
                 <h1>Recent Activity</h1>
             </div>
-            
+
             <table id="dataTable" class="table">
                 <thead>
                     <tr>
@@ -96,12 +93,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                  
+
                 </tbody>
             </table>
-          
         </section>
-
     </section>
 </body>
 
