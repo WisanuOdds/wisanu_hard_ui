@@ -1,12 +1,27 @@
-
-.recent-activity{
+.recent-activity {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    
+
     width: 100%;
     margin-top: 35px;
 
     /* background-color: #afafaf; */
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: none;
+}
+
+#dataTable th,
+#dataTable td {
+    padding: 10px;
+    text-align: left;
+
+}
+
+#dataTable th {
+    font-weight: bold;
 }
