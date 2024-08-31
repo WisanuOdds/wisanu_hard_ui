@@ -52,6 +52,13 @@ hamburger.addEventListener("click", () => {
 
 });
 
+function updateSidebarVisibility() {
+  if (window.innerWidth < 1150) {
+      sidebar.classList.remove('active'); 
+      body.classList.remove("shift");
+  } 
+}
+
 function generateTableRows() {
   const tbody = document.querySelector('#dataTable tbody');
   tbody.innerHTML = ''; // Clear existing rows
@@ -69,8 +76,18 @@ function generateTableRows() {
   });
 }
 
+
+function printViewportWidth() {
+  console.log(`Viewport width: ${window.innerWidth}px`);
+}
+
+
 document.addEventListener("DOMContentLoaded", generateTableRows);
 
+// Add event listener for window resize
+window.addEventListener('resize', updateSidebarVisibility);
 
+// Initial print when the page loads
+printViewportWidth();
 
 
