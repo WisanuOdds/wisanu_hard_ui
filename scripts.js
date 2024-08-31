@@ -87,6 +87,9 @@ document.addEventListener("DOMContentLoaded", generateTableRows);
 // Add event listener for window resize
 window.addEventListener('resize', updateSidebarVisibility);
 
+//print viewport width on resize
+window.addEventListener('resize', printViewportWidth);
+
 // Initial print when the page loads
 printViewportWidth();
 

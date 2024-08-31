@@ -1,44 +1,36 @@
-
-.dashboard{
+.dashboard {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    
     width: 100%;
     margin-top: 35px;
-
-    /* background-color: #afafaf; */
 }
 
-h1{
+h1 {
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 600;
 }
 
-.container-title{
+.container-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
-.icon-title{
+.icon-title {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 32px;
     height: 32px;
     margin-right: 14px;
     padding: 2px;
     border-radius: 8px;
     color: rgb(255, 255, 255);
-
     background-color: #627aec;
-
 }
 
 .matrix {
@@ -46,52 +38,108 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 210px;
     height: 150px;
     border-radius: 20px;
-
     padding: 10px;
     color: #000000;
 }
 
-#like{
+#like {
     background-color: #cddffc;
 }
 
-#comment{
-    background-color: #fcf3da
+#comment {
+    background-color: #fcf3da;
 }
 
-#share{
+#share {
     background-color: #ece2fb;
 }
 
-.dashboard-content{
+.dashboard-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 10px;
-    /* background-color: #627aec; */
+    width: 100%;
+    max-width: 754px;
+    /* background-color: #9eff9b */
 }
 
-.matrix-icon{
-  font-size: 30px;
-  margin-bottom: 10px;
+.matrix-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.matrix-title{
-   font-size: 18px;
-   font-family: sans-serif;
-   font-weight: 500;
-   margin-bottom: 10px;
- 
-}
-.matrix-number{
-   font-size: 38px;
-   font-family: sans-serif;
-   font-weight: 400;
+.matrix-title {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
+.matrix-number {
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
 
+/* Media Queries for Responsive Design */
 
+/* สำหรับหน้าจอที่มีขนาดต่ำกว่า 1200px */
+@media (max-width: 1200px) {
+    /* .dashboard-content {
+    } */
+    .matrix {
+        border-radius: 16px;
+       
+    }
+}
+
+/* สำหรับหน้าจอที่มีขนาดต่ำกว่า 900px */
+@media (max-width: 900px) {
+    .dashboard-content {
+        grid-template-columns: repeat(3, 1fr);;
+    }
+
+    .matrix {
+        width: 90%;
+        height: auto; /* ให้ความสูงของ matrix ปรับตามเนื้อหา */
+    }
+
+    .matrix-icon {
+        font-size: 20px;
+    }
+
+    .matrix-title {
+        font-size: 16px;
+    }
+
+    .matrix-number {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 400px) {
+    .dashboard-content {
+        grid-template-columns: repeat(3, 1fr);;
+        gap: 10px;
+    }
+    .matrix {
+        width: 80%;
+        height: auto; /* ให้ความสูงของ matrix ปรับตามเนื้อหา */
+    }
+
+    .matrix-icon {
+        font-size: 16px;
+    }
+
+    .matrix-title {
+        font-size: 12px;
+    }
+
+    .matrix-number {
+        font-size: 18px;
+    }
+}

@@ -4,7 +4,8 @@ body {
     justify-content: center;
     width: 100%;
 
-    margin-top: 24px;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
@@ -115,10 +116,10 @@ body.shift{
     max-width: 1000px;
     min-width: fit-content;
     width: 50%;
-    
+
     /* margin-left: 335px; */
     padding: 10px 20px 20px 20px;
-    margin-right: 17px;
+    /* margin-right: 17px; */
     transition: transform 0.3s ease; /* เพิ่ม transition สำหรับ margin-left */
     /* background-color: #ebebeb; */
 }
@@ -126,4 +127,23 @@ body.shift{
 .main-content.shift {
     transform: translateX(15px); 
 
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-content {
+        padding: 10px 8px 0px 8px;
+        margin-right: 0px;
+    }
 }
