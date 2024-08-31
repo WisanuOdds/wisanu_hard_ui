@@ -10,6 +10,10 @@
     /* background-color: #afafaf; */
 }
 
+.table{
+    margin-top: 10px;
+}
+
 #dataTable {
     width: 100%;
     border-collapse: none;
