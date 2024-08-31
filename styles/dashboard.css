@@ -4,11 +4,14 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-
+    
+    width: 100%;
     margin-top: 35px;
+
+    background-color: #afafaf;
 }
 
-.box-title{
+.dashboard-title{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,6 +47,12 @@
     padding: 10px;
     color: #000000;
     background-color: #cddffc;
+}
+
+.dashboard-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 .matrix-icon{
