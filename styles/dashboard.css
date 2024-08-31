@@ -8,7 +8,7 @@
     width: 100%;
     margin-top: 35px;
 
-    background-color: #afafaf;
+    /* background-color: #afafaf; */
 }
 
 .dashboard-title{
@@ -46,7 +46,17 @@
 
     padding: 10px;
     color: #000000;
+}
+#like{
     background-color: #cddffc;
+}
+
+#comment{
+    background-color: #fcf3da
+}
+
+#share{
+    background-color: #ece2fb;
 }
 
 .dashboard-content{
@@ -67,7 +77,6 @@
    margin-bottom: 10px;
  
 }
-
 .matrix-number{
    font-size: 38px;
    font-family: sans-serif;
