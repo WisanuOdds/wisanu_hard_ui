@@ -4,17 +4,13 @@ body {
     justify-content: center;
     width: 100%;
 
-    margin: 24px 0px 0px 0px;
+    margin-top: 24px;
     font-family: Arial, sans-serif;
 }
 
 body.shift{
     min-width:1470px;
 }
-
-
-
-
 
 .sidebar {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -119,13 +115,15 @@ body.shift{
     max-width: 1000px;
     min-width: fit-content;
     width: 50%;
+    
     /* margin-left: 335px; */
     padding: 10px 20px 20px 20px;
+    margin-right: 17px;
     transition: transform 0.3s ease; /* เพิ่ม transition สำหรับ margin-left */
     /* background-color: #ebebeb; */
 }
 
 .main-content.shift {
-    transform: translateX(10px); 
+    transform: translateX(15px); 
 
 }

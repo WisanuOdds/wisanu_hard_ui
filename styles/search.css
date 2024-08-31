@@ -14,6 +14,7 @@
 
 .search {
     width: 100%;
+    min-width: 190px;
     min-height: 30px;
     padding: 8px;
     border: 1px solid #ccc;

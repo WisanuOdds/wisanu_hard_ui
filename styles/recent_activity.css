@@ -13,7 +13,7 @@
 #dataTable {
     max-width: 754px;
     width: 100%;
-    border-collapse: none;
+    border-collapse: none; /* ทำให้เส้นขอบเชื่อมติดกัน */
     margin-top: 10px;
     /* background-color: aqua; */
 }
@@ -22,6 +22,9 @@
 #dataTable td {
     padding: 8px;
     text-align: left;
+    white-space: nowrap; /* ป้องกันการตัดบรรทัด */
+    overflow: hidden; /* ซ่อนข้อความที่ยาวเกินไป */
+    text-overflow: ellipsis; /* แสดง ... เมื่อข้อความเกินขอบเขต */
 
 }
 
