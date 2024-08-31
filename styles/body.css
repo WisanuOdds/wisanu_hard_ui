@@ -7,7 +7,6 @@ body {
 }
 
 .sidebar {
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 250px;
     background: #ffffff;
@@ -107,16 +106,16 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    max-width: auto;
-    position: fixed;
-    left: 250px;
+    max-width: 1000px;
+    /* position: fixed;
+    left: 250px; */
     padding: 10px 30px 0px 40px;
     flex-grow: 1;
-    /* transition: transform 0.3s ease; */
+    transition: transform 0.3s ease;
 
-    /* background-color: #ebebeb; */
+    background-color: #ebebeb;
 }
-/* 
+
 .main-content.shift {
     transform: translateX(250px); 
-} */
+}
