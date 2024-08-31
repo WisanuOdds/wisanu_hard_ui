@@ -19,6 +19,9 @@ body {
     overflow: auto;
     z-index: 1; /* Ensure sidebar is above other content */
 }
+.icon-nav{
+    font-size: 20px;
+}
 
 .bottom-items {
     position: absolute; /* Positions at the bottom of sidebar */
