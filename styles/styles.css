@@ -54,9 +54,7 @@ body {
     display: flex;
     align-items: center;
 
-    padding: 10px 20px;
     font-size: 24px;
-    margin: 10px;
     cursor: pointer;
    
     transition: all 0.3s ease;
@@ -70,30 +68,24 @@ body {
     transition: transform 0.3s ease; /* Smooth movement */
 }
 
-.search.active {
-    transform: translateX(250px); /* Move hamburger icon with sidebar */
-}
-
 .hamburger {
     font-size: 24px;
-    margin: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.hamburger.active {
-    transform: translateX(250px); 
-}
-
 .main-content {
-    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 20px 0px 20px;
+    /* background-color: #bebebe; */
     flex-grow: 1;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .main-content.shift {
-    margin-left: 250px; 
+    transform: translateX(230px); 
 }
 
 /* Codinglab */
