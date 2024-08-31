@@ -41,12 +41,15 @@ const sidebar = document.getElementById("sidebar");
 const hamburger = document.getElementById("hamburger");
 const search = document.getElementById("search");
 const mainContent = document.getElementById("main-content");
+const body = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
   sidebar.classList.toggle("active");
   hamburger.classList.toggle("active");
   search.classList.toggle("active");
   mainContent.classList.toggle("shift");
+  body.classList.toggle("shift");
+
 });
 
 function generateTableRows() {

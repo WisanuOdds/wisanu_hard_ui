@@ -1,7 +1,7 @@
 body {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    /* flex-direction: row;
+    justify-content: center; */
     padding: 0;
     margin: 24px 0px 0px 0px;
     font-family: Arial, sans-serif;
@@ -18,7 +18,7 @@ body {
     left: -330px;
     transition: all 0.3s ease;
     overflow: auto;
-    z-index: 1; /* Ensure sidebar is above other content */
+    z-index: 1;
 }
 .icon-nav{
     font-size: 20px;
@@ -104,7 +104,6 @@ body {
 }
 
 
-
 /* main */
 .main-content {
     display: flex;
@@ -113,10 +112,11 @@ body {
     min-width: fit-content;
     width: 50%;
     padding: 10px 20px 20px 20px;
-    transition: transform 0.3s ease; /* เพิ่ม transition สำหรับ margin-left */
+    transition: transform 0.3s ease, margin 0.3s ease; /* เพิ่ม transition สำหรับ margin-left */
     /* background-color: #ebebeb; */
 }
 
 .main-content.shift {
-    transform: translateX(8px); 
+    transform: translateX(345px); 
+    animation: marginShiftAnimation 0.3s ease;
 }
