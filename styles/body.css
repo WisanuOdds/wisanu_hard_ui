@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.sidebar {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    background: #ffffff;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: -250px;
+    transition: all 0.3s ease;
+    overflow: auto;
+    z-index: 1; /* Ensure sidebar is above other content */
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0px 0px 0px;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-navbar{
+    margin: 0px 0px 0px 10px;
+    font-size: 18px;
+    color: #303030;
+}
+
+.sidebar ul li a {
+    color: #303030;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect */
+.sidebar a:hover i,
+.sidebar a:hover .text-navbar {
+    color: #8698f0; /* Change icon and text color on hover */
+}
+
+
+/* main */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    padding: 10px 30px 0px 40px;
+    flex-grow: 1;
+    transition: transform 0.3s ease;
+
+    /* background-color: #ebebeb; */
+}
+
+.main-content.shift {
+    transform: translateX(250px); 
+}
