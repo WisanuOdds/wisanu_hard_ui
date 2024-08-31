@@ -1,7 +1,7 @@
 body {
     display: flex;
-    /* flex-direction: row;
-    justify-content: center; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
     padding: 0;
     margin: 24px 0px 0px 0px;
     font-family: Arial, sans-serif;
@@ -117,6 +117,7 @@ body {
 }
 
 .main-content.shift {
-    transform: translateX(345px); 
+    transform: translateX(0px); 
+    margin-left: 345px;
     animation: marginShiftAnimation 0.3s ease;
 }
