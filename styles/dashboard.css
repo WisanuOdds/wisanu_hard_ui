@@ -31,5 +31,39 @@
     background-color: #627aec;
 
 }
+.matrix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 210px;
+    height: 150px;
+    border-radius: 20px;
+
+    padding: 10px;
+    color: #000000;
+    background-color: #cddffc;
+}
+
+.matrix-icon{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.matrix-title{
+   font-size: 18px;
+   font-family: sans-serif;
+   font-weight: 500;
+   margin-bottom: 10px;
+ 
+}
+
+.matrix-number{
+   font-size: 38px;
+   font-family: sans-serif;
+   font-weight: 400;
+}
+
 
 
