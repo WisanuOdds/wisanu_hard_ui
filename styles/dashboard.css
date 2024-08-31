@@ -1,19 +1,35 @@
 
-.main-content {
+.dashboard{
     display: flex;
     flex-direction: column;
-    max-width: auto;
-    padding: 10px 30px 0px 40px;
-    flex-grow: 1;
-    transition: transform 0.3s ease;
+    justify-content: start;
+    align-items: start;
 
-    /* background-color: #ebebeb; */
+    margin-top: 35px;
 }
 
-.main-content.shift {
-    transform: translateX(250px); 
+.box-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
+.icon-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+    margin-right: 14px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+
+    background-color: #627aec;
+
+}
 
 
