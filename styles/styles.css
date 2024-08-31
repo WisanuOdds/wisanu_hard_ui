@@ -33,6 +33,12 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.text-navbar{
+    margin: 0px 0px 0px 10px;
+    font-size: 18px;
+    color: #303030;
+}
+
 .sidebar ul li a {
     color: #303030;
     text-decoration: none;
