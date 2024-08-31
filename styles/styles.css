@@ -45,6 +45,12 @@ body {
     display: block;
 }
 
+/* Hover effect */
+.sidebar a:hover i,
+.sidebar a:hover .text-navbar {
+    color: #8698f0; /* Change icon and text color on hover */
+}
+
 .hamburger {
     font-size: 24px;
     margin: 10px;
