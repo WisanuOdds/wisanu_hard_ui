@@ -3,19 +3,22 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-
     width: 100%;
+    max-width: 754px;
     margin-top: 35px;
+}
 
-    /* background-color: #afafaf; */
+.container-table {
+    width: 100%; /* ความกว้างเต็มที่ของพาเรนต์ */
+    overflow-x: scroll; /* ทำให้เนื้อหาในแนวนอนเลื่อนได้ */
+    margin-bottom: 3rem; /* ระยะห่างด้านล่าง */
 }
 
 #dataTable {
-    max-width: 754px;
-    width: 100%;
-    border-collapse: none; /* ทำให้เส้นขอบเชื่อมติดกัน */
-    margin-top: 10px;
-    /* background-color: aqua; */
+    width: 100%; /* ความกว้างของตาราง (กำหนดให้กว้างเกินพื้นที่พาเรนต์) */
+    min-width: 500px;
+    border-collapse: collapse; /* ทำให้ขอบของเซลล์ไม่ซ้อนกัน */
+    
 }
 
 #dataTable th,
@@ -25,9 +28,49 @@
     white-space: nowrap; /* ป้องกันการตัดบรรทัด */
     overflow: hidden; /* ซ่อนข้อความที่ยาวเกินไป */
     text-overflow: ellipsis; /* แสดง ... เมื่อข้อความเกินขอบเขต */
-
 }
 
 #dataTable th {
     font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .container-table {
+       max-width: 700px;
+       border: rgb(208, 208, 208);
+       border-radius: 0.75rem; /* รัศมีของขอบที่มน */
+       border-width: 1px; /* ความหนาของขอบ */
+       border-style: solid; /* ประเภทของขอบ */
+    }
+}
+
+@media (max-width: 613px) {
+    .container-table {
+       max-width: 500px;
+       
+    }
+}
+
+@media (max-width: 554px) {
+    .container-table {
+       max-width: 440px;
+    }
+}
+
+@media (max-width: 519px) {
+    .container-table {
+       max-width: 400px;
+    }
+}
+
+@media (max-width: 439px) {
+    .container-table {
+       max-width: 370px;
+    }
+}
+
+@media (max-width: 390px) {
+    .container-table {
+       max-width: 300px;
+    }
 }
