@@ -19,7 +19,6 @@
 
 }
 
-
 .icon-title{
     display: flex;
     justify-content: center;
@@ -34,6 +33,7 @@
     background-color: #627aec;
 
 }
+
 .matrix {
     display: flex;
     flex-direction: column;
@@ -47,6 +47,7 @@
     padding: 10px;
     color: #000000;
 }
+
 #like{
     background-color: #cddffc;
 }

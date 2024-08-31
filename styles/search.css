@@ -1,4 +1,3 @@
-
 .content-hamburger-search {
     display: flex;
     align-items: center;
@@ -6,7 +5,7 @@
     min-height: 45px;
     font-size: 24px;
     cursor: pointer;
-   
+
     transition: all 0.3s ease;
     /* background-color: #b3e192; */
 }
@@ -14,12 +13,13 @@
 .search {
     min-width: 800px;
     min-height: 25px;
-    
+
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
     margin-left: 30px;
-    transition: transform 0.3s ease; /* Smooth movement */
+    transition: transform 0.3s ease;
+    /* Smooth movement */
 }
 
 .hamburger {
@@ -28,12 +28,18 @@
     transition: all 0.3s ease;
 }
 
+/* เอฟเฟกต์ hover */
+.hamburger:hover {
+    transform: scale(1.1);
+    /* ขยายขนาดขึ้น 10% */
+    color: #8698f0;
+    /* เปลี่ยนสีเป็นสีที่ต้องการ */
+}
 
-img{
+
+img {
     width: 50px;
     height: 50px;
     border-radius: 100%;
     margin: 0px 0px 0px 20px;
 }
-
-
