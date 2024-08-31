@@ -10,3 +10,7 @@ hamburger.addEventListener("click", () => {
   search.classList.toggle("active");
   mainContent.classList.toggle("shift");
 });
+
+
+
+
