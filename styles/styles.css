@@ -1,14 +1,14 @@
 body {
     display: flex;
-    margin: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .sidebar {
+    /* เพิ่มเงา ด้านขวา */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 250px;
-    background: #333;
-    color: #fff;
+    background: #ffffff;
     position: fixed;
     height: 100vh;
     top: 0;
@@ -25,7 +25,7 @@ body {
 .sidebar ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 30px 0px 0px 0px;
 }
 
 .sidebar ul li {
@@ -34,7 +34,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: #fff;
+    color: #303030;
     text-decoration: none;
     display: block;
 }
@@ -62,3 +62,40 @@ body {
 .main-content.shift {
     margin-left: 250px; /* Shift main content when sidebar is active */
 }
+
+/* Codinglab */
+.box-codinglab{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    /* background-color: #f4f4f4; */
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 50px;
+}
+
+.cl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #7266f4;
+    color: #ffffff;
+    min-width: 40px ;
+    min-height: 40px;
+    border-radius: 100px;
+     
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.codinglab{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
