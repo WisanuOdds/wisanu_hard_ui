@@ -118,10 +118,10 @@ body.shift{
     width: 50%;
 
     /* margin-left: 335px; */
-    padding: 10px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     /* margin-right: 17px; */
     transition: transform 0.3s ease; /* เพิ่ม transition สำหรับ margin-left */
-    /* background-color: #ebebeb; */
+    /* background-color: #ffd1d1; */
 }
 
 .main-content.shift {
@@ -138,12 +138,13 @@ body.shift{
 @media (max-width: 900px) {
     .main-content {
         width: 70%;
+        padding: 30px 10px 10px 10px;
     }
 }
 
 @media (max-width: 400px) {
     .main-content {
-        padding: 10px 8px 0px 8px;
+        padding: 10px 5px 0px 5px;
         margin-right: 0px;
     }
 }
