@@ -10,7 +10,7 @@ body {
 }
 
 body.shift {
-    min-width: 1470px;
+    min-width: 1460px;
 }
 
 .sidebar {
@@ -24,6 +24,11 @@ body.shift {
     transition: all 0.3s ease;
     overflow: auto;
     z-index: 1;
+    transition: left 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* เพิ่มแอนิเมชันที่สมูทขึ้น */
+}
+
+.sidebar.active {
+    left: 0;
 }
 
 .icon-nav {
@@ -39,9 +44,7 @@ body.shift {
     /* Ensures it stretches across the sidebar width */
 }
 
-.sidebar.active {
-    left: 0;
-}
+
 
 .sidebar ul {
     list-style: none;
@@ -126,8 +129,9 @@ body.shift {
     padding: 30px 20px 20px 20px;
     /* margin-right: 17px; */
     transition: transform 0.3s ease;
-    /* เพิ่ม transition สำหรับ margin-left */
-    /* background-color: #ffd1d1; */
+
+    /* background-color: #a7a0f1; */
+    
 }
 
 .main-content.shift {
