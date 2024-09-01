@@ -15,12 +15,12 @@ body.shift {
 
 .sidebar {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 330px;
+    width: 320px;
     background: #ffffff;
     position: fixed;
     height: 100vh;
     top: 0;
-    left: -330px;
+    left: -320px;
     transition: all 0.3s ease;
     overflow: auto;
     z-index: 1;
@@ -49,7 +49,7 @@ body.shift {
 .sidebar ul {
     list-style: none;
     padding: 0;
-    margin: 30px 0px 0px 25px;
+    margin: 30px 0px 0px 30px;
 }
 
 .sidebar ul li {
