@@ -44,25 +44,29 @@ const mainContent = document.getElementById("main-content");
 const body = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
-  sidebar.classList.toggle("active");
-  hamburger.classList.toggle("active");
-  search.classList.toggle("active");
-  mainContent.classList.toggle("shift");
-  body.classList.toggle("shift");
+  if (window.innerWidth > 1150) {
+    sidebar.classList.toggle("active");
+    body.classList.toggle("shift");
+    hamburger.classList.toggle("active");
+    mainContent.classList.toggle("shift");
+  }
 
 });
 
 function updateSidebarVisibility() {
   if (window.innerWidth < 1150) {
-      sidebar.classList.remove('active'); 
-      body.classList.remove("shift");
-  } 
+    sidebar.classList.remove("active");
+    body.classList.remove("shift");
+    hamburger.classList.remove("active");
+    mainContent.classList.remove("shift");
+    search.classList.remove("active");
+  }
+  
 }
 
 function generateTableRows() {
   const tbody = document.querySelector('#dataTable tbody');
   tbody.innerHTML = ''; // Clear existing rows
-
   data.forEach(item => {
       const row = document.createElement('tr');
       row.innerHTML = `
@@ -80,8 +84,6 @@ function generateTableRows() {
 function printViewportWidth() {
   console.log(`Viewport width: ${window.innerWidth}px`);
 }
-
-
 document.addEventListener("DOMContentLoaded", generateTableRows);
 
 // Add event listener for window resize

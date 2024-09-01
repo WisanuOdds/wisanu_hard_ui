@@ -9,8 +9,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-body.shift{
-    min-width:1470px;
+body.shift {
+    min-width: 1470px;
 }
 
 .sidebar {
@@ -25,14 +25,18 @@ body.shift{
     overflow: auto;
     z-index: 1;
 }
-.icon-nav{
+
+.icon-nav {
     font-size: 20px;
 }
 
 .bottom-items {
-    position: absolute; /* Positions at the bottom of sidebar */
-    bottom: 0; /* Ensures it sticks to the bottom */
-    width: 100%; /* Ensures it stretches across the sidebar width */
+    position: absolute;
+    /* Positions at the bottom of sidebar */
+    bottom: 0;
+    /* Ensures it sticks to the bottom */
+    width: 100%;
+    /* Ensures it stretches across the sidebar width */
 }
 
 .sidebar.active {
@@ -52,7 +56,7 @@ body.shift{
     font-weight: 500;
 }
 
-.text-navbar{
+.text-navbar {
     margin: 0px 0px 0px 10px;
     font-size: 20px;
     color: #303030;
@@ -67,11 +71,12 @@ body.shift{
 /* Hover effect */
 .sidebar a:hover i,
 .sidebar a:hover .text-navbar {
-    color: #8698f0; /* Change icon and text color on hover */
+    color: #8698f0;
+    /* Change icon and text color on hover */
 }
 
 /* Codinglab */
-.box-codinglab{
+.box-codinglab {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -81,10 +86,10 @@ body.shift{
     margin: 24px 0px 0px 0px;
     padding: 0px 0px 0px 70px;
 
-     /* background-color: #f1d0d0; */
+    /* background-color: #f1d0d0; */
 }
 
-.cl{
+.cl {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,17 +97,17 @@ body.shift{
 
     background-color: #7266f4;
     color: #ffffff;
-    min-width: 60px ;
+    min-width: 60px;
     min-height: 60px;
     border-radius: 100px;
-     
+
     font-family: sans-serif;
     font-size: 24px;
     font-weight: 700;
-    
+
 }
 
-.codinglab{
+.codinglab {
     margin-left: 10px;
     font-size: 24px;
     font-weight: 800;
@@ -120,12 +125,13 @@ body.shift{
     /* margin-left: 335px; */
     padding: 30px 20px 20px 20px;
     /* margin-right: 17px; */
-    transition: transform 0.3s ease; /* เพิ่ม transition สำหรับ margin-left */
+    transition: transform 0.3s ease;
+    /* เพิ่ม transition สำหรับ margin-left */
     /* background-color: #ffd1d1; */
 }
 
 .main-content.shift {
-    transform: translateX(15px); 
+    transform: translateX(15px);
 
 }
 
@@ -148,3 +154,5 @@ body.shift{
         margin-right: 0px;
     }
 }
+
+

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/search.css">
     <link rel="stylesheet" href="styles/dashboard.css">
     <link rel="stylesheet" href="styles/recent_activity.css">
+    <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script type="module" src="scripts.js" defer></script>
 
@@ -43,7 +44,24 @@
     <section class="main-content" id="main-content">
 
         <section class="content-hamburger-search">
-            <i class="fas fa-bars hamburger" id="hamburger"></i>
+            <div class="dropdown">
+                <i class="fas fa-bars hamburger" id="hamburger"></i>
+                <div class="dropdown-content">
+                    <ul>
+                          <li><a href="#"><i class="fa-solid fa-house icon-nav"></i><span class="text-navbar">Dashboard</span></a></li>
+                          <li><a href="#"><i class="fa-regular fa-copy icon-nav"></i><span class="text-navbar">Content</span></a></li>
+                          <li><a href="#"><i class="fa-solid fa-chart-column icon-nav"></i><span class="text-navbar">Analytics</span></a></li>
+                          <li><a href="#"><i class="fa-regular fa-thumbs-up icon-nav"></i><span class="text-navbar">Likes</span></a></li>
+                          <li><a href="#"><i class="fa-regular fa-message icon-nav"></i><span class="text-navbar">Comments</span></a></li>
+                          <li><a href="#"><i class="fa-solid fa-share-nodes icon-nav"></i><span class="text-navbar">Share</span></a></li>
+                      </ul>
+                      <hr style="border: 0.5px solid #cbcbcba9;">
+                      <ul>
+                          <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket icon-nav"></i><span class="text-navbar">Logout</span></a></li>
+                          <li><a href="#"><i class="fa-solid fa-circle-half-stroke icon-nav"></i><span class="text-navbar">Dark Mode</span></a></li>
+                      </ul>
+                  </div>
+            </div>
             <input type="text" class="search" id="search" placeholder="Search here ...">
             <img src="wisanu.png" alt="wisanu" class="wisanu">
         </section>
