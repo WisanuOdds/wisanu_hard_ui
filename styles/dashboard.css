@@ -5,6 +5,7 @@
     align-items: start;
     width: 100%;
     margin-top: 35px;
+    /* background-color: #627aec; */
 }
 
 h1 {
@@ -18,6 +19,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   
 }
 
 .icon-title {
@@ -38,8 +40,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 210px;
-    height: 150px;
+    min-height: 200px;
     border-radius: 20px;
     padding: 10px;
     color: #000000;
@@ -63,8 +64,7 @@ h1 {
     gap: 2rem;
     margin-top: 10px;
     width: 100%;
-    max-width: 754px;
-    /* background-color: #9eff9b */
+    background-color: #9eff9b
 }
 
 .matrix-icon {
@@ -79,7 +79,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.matrix-number {
+.matrix-number{
     font-size: 38px;
     font-family: sans-serif;
     font-weight: 400;
