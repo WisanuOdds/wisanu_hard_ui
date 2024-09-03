@@ -15,7 +15,8 @@ body {
 
 .sidebar {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     background: #ffffff;
     position: fixed;
     height: 100vh;
@@ -24,12 +25,15 @@ body {
     transition: all 0.3s ease;
     overflow: auto;
     z-index: 1;
-    transition: left 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* เพิ่มแอนิเมชันที่สมูทขึ้น */
+    transition: left 0.5s cubic-bezier(0.25, 0.8, 0.25, 1),  max-width 0.3s ease; /* เพิ่มแอนิเมชันที่สมูทขึ้น */
 }
 
 .sidebar.active {
     left: 0;
 }
+/* .sidebar.active2{
+    max-width: 100px;
+} */
 
 .icon-nav {
     font-size: 20px;
@@ -138,13 +142,25 @@ body {
 
 }
 
-/* @media (max-width: 1200px) {
-    .main-content {
-        width: 50%;
+ @media (max-width: 1315px) {
+    .sidebar {
+        max-width: 100px;
     }
-}
+    .main-content.shift {
+        transform: translateX(50px);
+   
+    }
 
-@media (max-width: 900px) {
+    .text-navbar {
+       display: none;
+    }
+       
+ }
+/* 31.25  40.625*/
+
+   
+
+/* @media (max-width: 900px) {
     .main-content {
         width: 70%;
         padding: 30px 10px 10px 10px;
@@ -156,6 +172,6 @@ body {
         padding: 10px 5px 0px 5px;
         margin-right: 0px;
     }
-} */
+}  */
 
 

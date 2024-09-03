@@ -1,5 +1,5 @@
 /* แสดง dropdown-content เมื่อขนาดหน้าจอน้อยกว่า 1150px */
-@media (max-width: 1150px) {
+@media (max-width: 735px) {
     .dropdown-content {
         display: block; /* ให้แสดง dropdown */
     }
