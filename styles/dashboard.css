@@ -4,7 +4,7 @@
     justify-content: start;
     align-items: start;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 25px;
     /* background-color: #627aec; */
 }
 
@@ -40,7 +40,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 200px;
+    min-height: 175px;
     border-radius: 20px;
     padding: 10px;
     color: #000000;

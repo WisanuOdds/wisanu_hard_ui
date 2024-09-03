@@ -44,7 +44,7 @@ const mainContent = document.getElementById("main-content");
 const body = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
-  if (window.innerWidth > 736) {
+  if (window.innerWidth > 825) {
     sidebar.classList.toggle("active");
     body.classList.toggle("shift");
     hamburger.classList.toggle("active");
@@ -53,7 +53,7 @@ hamburger.addEventListener("click", () => {
 });
 
 function updateSidebarVisibility() {
-  if (window.innerWidth < 736) {
+  if (window.innerWidth < 825) {
     sidebar.classList.remove("active");
     body.classList.remove("shift");
     hamburger.classList.remove("active");

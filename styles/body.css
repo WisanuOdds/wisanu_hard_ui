@@ -16,7 +16,7 @@ body {
 .sidebar {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
     background: #ffffff;
     position: fixed;
     height: 100vh;
@@ -139,7 +139,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: fit-content;
-    max-width: 1300px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     /* margin-left: 335px; */
@@ -152,12 +152,12 @@ body {
 }
 
 .main-content.shift {
-    transform: translateX(130px);
+    transform: translateX(120px);
     width: 70%;
 
 }
 
-@media (min-width: 735px) and (max-width: 1315px) {
+@media (min-width: 825px) and (max-width: 1315px) {
     .sidebar {
         max-width: 100px;
     }

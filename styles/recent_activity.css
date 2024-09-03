@@ -13,13 +13,11 @@
 
 .container-table {
     width: 100%; /* ความกว้างเต็มที่ของพาเรนต์ */
-    overflow-x: scroll; /* ทำให้เนื้อหาในแนวนอนเลื่อนได้ */
-    /* margin-top: 10px; */
-    /* background-color: blueviolet; */
-}
+} 
 
 #dataTable {
     width: 100%; /* ความกว้างของตาราง (กำหนดให้กว้างเกินพื้นที่พาเรนต์) */
+    min-width: 700px; /* กำหนดความกว้างขั้นต่ำของตาราง */
     border-collapse: collapse; /* ทำให้ขอบของเซลล์ไม่ซ้อนกัน */
     /* background-color: aquamarine; */
     
@@ -39,42 +37,13 @@
     font-weight: bold;
 }
 
-@media (max-width: 900px) {
-    /* .container-table {
+@media (max-width: 739px) {
+    .container-table {
+        width: calc(100vw - 40px);
        border: rgb(208, 208, 208);
-       border-radius: 0.75rem; 
-       border-width: 1px; 
+       border-radius: 14px; 
        border-style: solid; 
-    } */
+       padding: 0;
+       overflow-x:scroll ;
+    } 
 }
-
-/* @media (max-width: 613px) {
-    .container-table {
-       max-width: 500px;
-       
-    }
-}
-
-@media (max-width: 554px) {
-    .container-table {
-       max-width: 440px;
-    }
-}
-
-@media (max-width: 519px) {
-    .container-table {
-       max-width: 400px;
-    }
-}
-
-@media (max-width: 439px) {
-    .container-table {
-       max-width: 370px;
-    }
-}
-
-@media (max-width: 390px) {
-    .container-table {
-       max-width: 300px;
-    }
-} */
