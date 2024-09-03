@@ -1,3 +1,5 @@
+
+
 body {
     display: flex;
     flex-direction: row;
@@ -77,6 +79,8 @@ body {
     font-size: 20px;
     color: #303030;
 
+    transform:  margin-left 0.3s ease;
+
     /* background-color: blueviolet; */
 }
 
@@ -115,6 +119,7 @@ li:hover, .text-navbar:hover {
 
     margin: 24px 0px 0px 0px;
     padding: 0px 0px 0px 70px;
+    transition: padding 0.3s ease;
 
     /* background-color: #f1d0d0; */
 }
@@ -141,6 +146,7 @@ li:hover, .text-navbar:hover {
     margin-left: 10px;
     font-size: 24px;
     font-weight: 800;
+    transform:  margin-left 0.3s ease;
 }
 
 
@@ -168,37 +174,31 @@ li:hover, .text-navbar:hover {
 }
 
 @media (min-width: 825px) and (max-width: 1315px) {
+
     .sidebar {
         max-width: 100px;
     }
-    .text-navbar {
-        display: none;
-    }
 
+    .codinglab {
+        visibility: hidden;
+    }
+    .text-navbar {
+       visibility: hidden;
+    }
+    
     .main-content.shift {
         transform: translateX(50px);
 
     }
 
     .box-codinglab {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
         min-height: 70px;
         margin: 24px 0px 0px 0px;
         padding: 0px 0px 0px 20px;
 
-        /* background-color: #f1d0d0; */
-    }
-
-    .codinglab {
-        display: none;
     }
 
     .sidebar ul {
-        list-style: none;
-        padding: 0;
         margin: 30px 0px 0px 20px;
     }
 }
