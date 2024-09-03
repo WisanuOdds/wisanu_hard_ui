@@ -37,7 +37,7 @@
     font-weight: bold;
 }
 
-@media (max-width: 739px) {
+@media (min-width: 375px) and (max-width: 739px) {
     .container-table {
         width: calc(100vw - 40px);
        border: rgb(208, 208, 208);
