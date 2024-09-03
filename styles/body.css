@@ -76,7 +76,19 @@ body {
     margin: 0px 0px 0px 10px;
     font-size: 20px;
     color: #303030;
+
     /* background-color: blueviolet; */
+}
+
+
+li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแอนิเมชัน */
+}
+
+li:hover, .text-navbar:hover {
+    transform: scale(1.1); /* ขยายขนาดขึ้น 10% */
+    color: #8698f0;
+
 }
 
 .sidebar ul li a {
@@ -85,13 +97,11 @@ body {
     white-space: nowrap; /* ป้องกันการแสดงผลในหลายบรรทัด */
 }
 
-
-
-
 /* Hover effect */
 .sidebar a:hover i,
 .sidebar a:hover .text-navbar {
     color: #8698f0;
+
     /* Change icon and text color on hover */
 }
 

@@ -24,6 +24,9 @@
 }
 
 
+
+
+
 /* ซ่อน dropdown-content เมื่อขนาดหน้าจอมากกว่า 1150px */
 @media (min-width: 825px) {
     .dropdown-content {
@@ -101,3 +104,28 @@
     color: #8698f0;
     /* Change icon and text color on hover */
 }
+
+
+li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแอนิเมชัน */
+}
+
+li a {
+    width: fit-content;
+    transition: color 0.3s ease; /* เพิ่มแอนิเมชันการเปลี่ยนสี */
+}
+
+li a i, /* สำหรับไอคอน */
+li a .text-navbar { /* สำหรับข้อความ */
+    transition: color 0.3s ease; /* เพิ่มแอนิเมชันการเปลี่ยนสี */
+}
+
+li:hover {
+    transform: scale(1.1); /* ขยายขนาดขึ้น 10% */
+}
+
+li:hover a i,
+li:hover a .text-navbar {
+    color: #8698f0; /* เปลี่ยนสีเมื่อ hover */
+}
+
