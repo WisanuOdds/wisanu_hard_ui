@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
 
-    max-width: 754px;
+    /* max-width: 754px; */
     width: 100%;
 
     font-size: 24px;
@@ -47,7 +47,6 @@ img {
 
 
 @media (max-width: 400px) {
-
 .search {
     width: 100%;
     min-width: 150px;
