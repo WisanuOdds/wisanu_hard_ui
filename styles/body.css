@@ -122,16 +122,13 @@ body {
     min-width: fit-content;
     max-width: 1300px;
     width: 100%;
-
     margin: 0 auto;
-
-
     /* margin-left: 335px; */
     padding: 30px 20px 20px 20px;
     /* margin-right: 17px; */
     transition: transform 0.3s ease, width 0.3s ease;
-
-    /* background-color: #a7a0f1; */
+/* 
+    background-color: #a7a0f1; */
     
 }
 

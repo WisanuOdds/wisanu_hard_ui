@@ -5,6 +5,7 @@
     align-items: start;
 
     width: 100%;
+    max-height: fit-content;
     margin-top: 35px;
     /* background-color: aqua; */
 
@@ -13,13 +14,15 @@
 .container-table {
     width: 100%; /* ความกว้างเต็มที่ของพาเรนต์ */
     overflow-x: scroll; /* ทำให้เนื้อหาในแนวนอนเลื่อนได้ */
-    margin-bottom: 3rem; /* ระยะห่างด้านล่าง */
+    /* margin-top: 10px; */
+    /* background-color: blueviolet; */
 }
 
 #dataTable {
     width: 100%; /* ความกว้างของตาราง (กำหนดให้กว้างเกินพื้นที่พาเรนต์) */
     min-width: 500px;
     border-collapse: collapse; /* ทำให้ขอบของเซลล์ไม่ซ้อนกัน */
+    /* background-color: aquamarine; */
     
 }
 
@@ -30,6 +33,7 @@
     white-space: nowrap; /* ป้องกันการตัดบรรทัด */
     overflow: hidden; /* ซ่อนข้อความที่ยาวเกินไป */
     text-overflow: ellipsis; /* แสดง ... เมื่อข้อความเกินขอบเขต */
+    font-size: 18px;
 }
 
 #dataTable th {
