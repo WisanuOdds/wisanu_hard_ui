@@ -21,6 +21,7 @@ h1 {
     justify-content: center;
     align-items: center;
     color: var(--text-color);
+    transition: color 0.3s ease;
 
 }
 
@@ -39,14 +40,17 @@ h1 {
 
 #like {
     background-color: var(--like);
+    transition: background-color 0.3s ease;
 }
 
 #comment {
     background-color: var(--comment);
+    transition: background-color 0.3s ease;
 }
 
 #share {
     background-color:  var(--share);
+    transition: background-color 0.3s ease;
 }
 
 .dashboard-content {
@@ -69,7 +73,8 @@ h1 {
     border-radius: 16px;
     padding: 10px;
     color: var( --text-matrix);
-    transition: height 0.3s ease;
+    transition: height 0.3s ease, color 0.3s ease;
+
 }
 
 

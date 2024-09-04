@@ -44,6 +44,9 @@ const mainContent = document.getElementById("main-content");
 const body = document.querySelector("body");
 let darkmode =localStorage.getItem("darkmode");
 const themeSwitch= document.getElementById("theme-switch");
+const themeSwitch2 = document.getElementById("theme-switch2");
+const themeElement = document.getElementById("theme");
+const themeElement2 = document.getElementById("theme2");
 
 const enableDarkMode = () => {
   document.body.classList.add("darkmode");
@@ -62,7 +65,18 @@ if (darkmode === "active") {
 themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem("darkmode");
   darkmode !== "active" ? enableDarkMode() : disableDarkMode();
+
+  themeElement.textContent = themeElement.textContent === "Dark Mode" ? "Light Mode" : "Dark Mode";
+  themeElement2.textContent = themeElement2.textContent === "Dark Mode" ? "Light Mode" : "Dark Mode";
 });
+
+themeSwitch2.addEventListener("click", () => {
+  darkmode = localStorage.getItem("darkmode");
+  darkmode !== "active" ? enableDarkMode() : disableDarkMode();
+  themeElement.textContent = themeElement.textContent === "Dark Mode" ? "Light Mode" : "Dark Mode";
+  themeElement2.textContent = themeElement2.textContent === "Dark Mode" ? "Light Mode" : "Dark Mode";
+});
+
 
 hamburger.addEventListener("click", () => {
   if (window.innerWidth > 825) {

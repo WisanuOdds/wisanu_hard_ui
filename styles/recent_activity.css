@@ -32,7 +32,7 @@
     text-overflow: ellipsis; /* แสดง ... เมื่อข้อความเกินขอบเขต */
     font-size: 18px;
     color: var(--text-color);
-    transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease, color 0.3s ease;
 }
 
 #dataTable th {

@@ -23,11 +23,12 @@
     border: 1px solid var(--border);
     color: var(--text-color);
     background-color: var(--background-body);
+    transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     /* Smooth movement */
 }
 .search::placeholder {
     color: var(--text-color);
-  
+
 }
 .search:focus {
     background-color: var(--background-body); /* สีพื้นหลังเมื่อช่อง input ถูกเลือก */
@@ -39,6 +40,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     color: var(--text-color);
+    transition: color 0.3s ease;
 }
 
 /* เอฟเฟกต์ hover */
