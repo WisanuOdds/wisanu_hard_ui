@@ -190,7 +190,7 @@ li:hover, .text-navbar:hover {
 }
 
 .main-content.shift {
-    transform: translateX(120px);
+    transform: translateX(140px);
     width: 70%;
 
 }
