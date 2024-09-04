@@ -48,7 +48,7 @@
 
 .dropdown .dropbtn {
     font-size: 16px;
-    color: white;
+    color: var(--text-color);
     padding: 0px 0px;
     background-color: inherit;
     font-family: inherit;
@@ -70,7 +70,7 @@
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: var(--text-color);
     padding: 0px 12px 0px 20px;
     min-width: 40px;
     min-height: 40px;
@@ -93,7 +93,7 @@
 }
 
 .dropdown-content ul li a {
-    color: #303030;
+    color: var(--text-color);
     text-decoration: none;
     display: block;
 }

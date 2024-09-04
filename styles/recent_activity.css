@@ -31,6 +31,7 @@
     overflow: hidden; /* ซ่อนข้อความที่ยาวเกินไป */
     text-overflow: ellipsis; /* แสดง ... เมื่อข้อความเกินขอบเขต */
     font-size: 18px;
+    color: var(--text-color);
 }
 
 #dataTable th {
@@ -39,7 +40,7 @@
 
 @media (min-width: 375px) and (max-width: 739px) {
     .container-table {
-        width: calc(100vw - 40px);
+       width: calc(100vw - 40px);
        border: rgb(208, 208, 208);
        border-radius: 14px; 
        border-style: solid; 

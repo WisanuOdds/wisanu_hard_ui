@@ -17,17 +17,28 @@
     min-width: 150px;
     min-height: 30px;
     padding: 8px 8px 8px 16px;
-    border: 1px solid #ccc;
     border-radius: 6px;
     margin: 0px 26px 0px 26px;
     transition: transform 0.3s ease;
+    border: 1px solid var(--border);
+    color: var(--text-color);
+    background-color: var(--background-body);
     /* Smooth movement */
+}
+.search::placeholder {
+    color: var(--text-color);
+  
+}
+.search:focus {
+    background-color: var(--background-body); /* สีพื้นหลังเมื่อช่อง input ถูกเลือก */
+    border-color: var(--focus-border); /* สีขอบเมื่อช่อง input ถูกเลือก */
 }
 
 .hamburger {
     font-size: 28px;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: var(--text-color);
 }
 
 /* เอฟเฟกต์ hover */
