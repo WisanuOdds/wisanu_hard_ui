@@ -32,6 +32,7 @@
     text-overflow: ellipsis; /* แสดง ... เมื่อข้อความเกินขอบเขต */
     font-size: 18px;
     color: var(--text-color);
+    transition: font-size 0.3s ease;
 }
 
 #dataTable th {
@@ -47,4 +48,25 @@
        padding: 0;
        overflow-x:scroll ;
     } 
+ 
+}
+
+@media (max-width: 739px) {
+    #dataTable {
+        min-width: 600px; /* กำหนดความกว้างขั้นต่ำของตาราง */
+    }
+    #dataTable th,
+    #dataTable td {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 546px) {
+    #dataTable {
+        min-width: 550px; /* กำหนดความกว้างขั้นต่ำของตาราง */
+    }
+    #dataTable th,
+    #dataTable td {
+        font-size: 14px;
+    }
 }

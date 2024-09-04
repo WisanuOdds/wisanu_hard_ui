@@ -5,23 +5,23 @@
     --text-matrix: #222222;
     --background-body: #ffffff;
     --background-nav: #ffffff;
+
     --like:#cddffc;
     --comment:#fcf3da;
     --share:#ece2fb;
+
     --shodow:rgba(0, 0, 0, 0.1); 
-    --border:#222222;
+    --border:#dcdcdc;
+
 }
 
 .darkmode{
     --text-color: #d4d4d4;
-    --background-body: #1e1e1e;
-    --background-nav: #252526;
+    --background-body:  #252526;
+    --background-nav:#1e1e1e;
     --shodow:rgba(226, 226, 226, 0.1);
     --border: #353535;
     --focus-border: #8b8b8b;
-
-    --primary-color:  #333333;
-    --seconday-color: #ff3366;
 }
 
 body {
